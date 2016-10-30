@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="454.0" prefWidth="620.0" styleClass="ventanaCompilador" xmlns:fx="http://javafx.com/fxml" fx:controller="compiladorgui.CompiladorController">
+  <children>
+    <AnchorPane prefHeight="427.0" prefWidth="592.0" styleClass="ventanaCompilador" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="13.0">
+      <children>
+        <TextArea fx:id="txtEditor" editable="false" prefHeight="304.0" prefWidth="564.0" promptText="" style="" styleClass="txtCompilador" wrapText="true" AnchorPane.bottomAnchor="50.5" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="72.5" />
+        <Label prefWidth="209.0" text="Turtle's Compiler" textFill="BLACK" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0">
+          <font>
+            <Font name="Arial Rounded MT Bold" size="24.0" />
+          </font>
+        </Label>
+        <Button fx:id="btnCompilar" mnemonicParsing="false" onAction="#eventoCompilar" prefHeight="31.0" prefWidth="96.0" styleClass="btnCompilar" text="Compilar" AnchorPane.bottomAnchor="12.0" AnchorPane.rightAnchor="14.0">
+          <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+          </font>
+          <stylesheets>
+            <URL value="@styles.css" />
+          </stylesheets>
+        </Button>
+        <MenuBar prefHeight="28.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="9.0">
+          <menus>
+            <Menu mnemonicParsing="false" text="Abrir">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#abrirArchivo" text="Archivo" fx:id="btnAbrir" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Ayuda">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#abrirManual" text="Manual de Uso" />
+                <MenuItem mnemonicParsing="false" onAction="#abrirAcercaDe" text="Acerca de" />
+              </items>
+            </Menu>
+          </menus>
+        </MenuBar>
+        <Button mnemonicParsing="false" onAction="#limpiarTexto" prefHeight="31.0" prefWidth="81.0" text="Limpiar" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="21.0" />
+      </children>
+    </AnchorPane>
+  </children>
+  <stylesheets>
+    <URL value="@styles.css" />
+  </stylesheets>
+</AnchorPane>

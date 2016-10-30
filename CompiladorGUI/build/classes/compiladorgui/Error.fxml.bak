@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="-1.0" prefWidth="-1.0" styleClass="ventana" xmlns:fx="http://javafx.com/fxml" fx:controller="compiladorgui.ErrorController">
+  <children>
+    <VBox prefHeight="238.99999952316284" prefWidth="-1.0" spacing="15.0" AnchorPane.bottomAnchor="16.02" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="41.98">
+      <children>
+        <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="200.0" prefViewportHeight="200.0" prefViewportWidth="400.0" prefWidth="400.0" VBox.vgrow="ALWAYS">
+          <content>
+            <TextArea fx:id="errorMessage" editable="false" prefWidth="-1.0" style="" styleClass="text-error" text="" wrapText="false" />
+          </content>
+        </ScrollPane>
+        <HBox fx:id="buttonBox" alignment="TOP_RIGHT" prefHeight="-1.0" prefWidth="-1.0" spacing="15.0" VBox.vgrow="NEVER">
+          <children>
+            <Button fx:id="quitButton" mnemonicParsing="false" onAction="#quitAction" prefWidth="77.0" styleClass="quit-button" text="Cerrar">
+              <font>
+                <Font size="12.0" />
+              </font>
+            </Button>
+            <Button fx:id="continueButton" defaultButton="true" mnemonicParsing="false" onAction="#continueAction" text="Continuar" />
+          </children>
+        </HBox>
+      </children>
+    </VBox>
+    <Text layoutX="175.0" layoutY="38.0" scaleX="1.7322823309217867" scaleY="1.0024531173519333" styleClass="heading" text="CONSOLA" textAlignment="JUSTIFY" />
+  </children>
+  <padding>
+    <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+  </padding>
+  <stylesheets>
+    <URL value="@styles.css" />
+  </stylesheets>
+</AnchorPane>
