@@ -10,3 +10,20 @@ ERROR en la linea (2): No pueden haber dos variables seguidas
 ERROR en la linea (2): No pueden haber dos operadores seguidos
 ERROR en la linea (2): Operador '5' desconocido
 ERROR en la linea (3): No se ha declarado la variable 'c'
+
+-------------------------------------------------------------------------------------------
+Sun Oct 30 13:37:41 CST 2016
+Compilado exitosamente 0 Errores
+
+-------------------------------------------------------------------------------------------
+Sun Oct 30 20:50:51 CST 2016
+
+ERROR en la linea (2): la sentencia debe terminar con ';'
+ERROR en la linea (2): No pueden haber dos variables seguidas
+ERROR en la linea (2): No pueden haber dos operadores seguidos
+ERROR en la linea (2): Operador '5' desconocido
+ERROR en la linea (3): No se ha declarado la variable 'c'
+
+-------------------------------------------------------------------------------------------
+Sun Oct 30 20:52:15 CST 2016
+Compilado exitosamente 0 Errores
